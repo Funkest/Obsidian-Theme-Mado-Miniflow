@@ -2513,15 +2513,18 @@ div.kanban-plugin__lane-title-count{
 	font-size:14px;
 }
 
+/**/
+/* me */
+/**/
 
-
-
-
+h2, .markdown-rendered h2 {
+    border-bottom: var(--h2-border-bottom);
+}
 
 /* @settings
 
-name: Mado Miniflow
-id: mado-miniflow
+name: Mado Miniflow Me
+id: mado-miniflow-me
 settings:
 	- 
 		id: intro-section
@@ -2540,6 +2543,20 @@ settings:
 		type: heading
 		collapsed: true
 		level: 3
+	-
+		id: background-primary
+		title: Theme Primary Background Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
+	-
+		id: background-secondary
+		title: Theme Secondary Background Color
+		type: variable-themed-color
+		format: hsl
+		default-light: '#'
+		default-dark: '#'
 	- 
 		id: theme-color
 		title: Theme Color
@@ -2987,10 +3004,9 @@ settings:
 		default-light: '#'
 		default-dark: '#'
 	-
-		id: h6-color
-		title: H6 Color
-		type: variable-themed-color
-		format: hsl
-		default-light: '#'
-		default-dark: '#'
+		id: h2-border-bottom
+		title: H2 Border bottom
+        description: Set h2 border-bottom.
+		type: variable-text
+		default: 1.9px solid black
 */
